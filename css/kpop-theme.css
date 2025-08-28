@@ -1,0 +1,54 @@
+
+        :root { --kpop-pink: #ff007f; --kpop-dark-purple: #1a1a2e; --kpop-darker-purple: #161625; }
+
+        body { font-family: 'Inter', sans-serif; background-color: var(--kpop-dark-purple); }
+
+        .main-content-bg { background-color: var(--kpop-dark-purple); }
+
+        .sidebar-bg { background-color: var(--kpop-darker-purple); }
+
+        .main-content::-webkit-scrollbar { width: 8px; }
+
+        .main-content::-webkit-scrollbar-track { background: #181818; }
+
+        .main-content::-webkit-scrollbar-thumb { background: var(--kpop-pink); border-radius: 10px; }
+
+        .sidebar-link { display: flex; align-items: center; padding: 0.75rem 1rem; border-radius: 0.5rem; color: #adb5bd; text-decoration: none; transition: all 0.2s ease-in-out; }
+
+        .sidebar-link:hover { background-color: rgba(255, 0, 127, 0.1); color: #ffffff; }
+
+        .sidebar-link.active { background-color: var(--kpop-pink); color: #ffffff; font-weight: 600; box-shadow: 0 0 15px rgba(255, 0, 127, 0.5); }
+
+        .card-custom { background-color: rgba(22, 22, 37, 0.7); border: 1px solid transparent; }
+
+        .text-logo-accent { color: var(--kpop-pink); }
+
+        .btn-primary { background-color: var(--kpop-pink); border-color: var(--kpop-pink); }
+
+        .btn-primary:hover { background-color: #ff3399; border-color: #ff3399; }
+
+        .border-secondary { border-color: rgba(255, 255, 255, 0.1) !important; }
+
+        a { color: inherit; text-decoration: none; }
+
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 0.5rem;}
+
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+       
+
+        .star-rating { display: flex; flex-direction: row-reverse; justify-content: start; }
+
+        .star-rating input[type="radio"] { display: none; }
+
+        .star-rating label { font-size: 2rem; color: #444; cursor: pointer; transition: color 0.2s; padding: 0 0.1rem; }
+
+        .star-rating input[type="radio"]:checked ~ label,
+
+        .star-rating label:hover,
+
+        .star-rating label:hover ~ label { color: var(--kpop-pink); }
+
+        .form-control { background-color: #282828; border-color: #444; }
+
+        .form-control:focus { background-color: #282828; border-color: var(--kpop-pink); box-shadow: 0 0 0 0.25rem rgba(255, 0, 127, 0.25); }

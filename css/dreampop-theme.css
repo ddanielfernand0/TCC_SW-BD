@@ -1,0 +1,118 @@
+      /* Estilos customizados - Tema Dreampop Psicodélico */
+        :root {
+            --dreampop-blue: #63a4ff;
+            --dreampop-pink: #f498c8;
+        }
+
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #e0e0e0;
+            background: linear-gradient(-45deg, #2c3e50, #1d2b64, #3c1053, #24243e);
+            background-size: 400% 400%;
+            animation: gradient-animation 25s ease infinite;
+        }
+
+        a { color: inherit; } 
+
+        .main-content-bg {
+             background-color: #121212; /* Fundo do conteúdo principal sólido */
+        }
+        
+        .sidebar-bg {
+            background-color: transparent;
+        }
+        
+        .main-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        .main-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .main-content::-webkit-scrollbar-thumb {
+            background: var(--dreampop-blue);
+            border-radius: 10px;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            color: #adb5bd;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+        }
+        .sidebar-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+        .sidebar-link.active {
+            background-color: var(--dreampop-blue);
+            color: #ffffff;
+            font-weight: 600;
+            box-shadow: 0 0 15px var(--dreampop-blue);
+        }
+        
+        .card-custom {
+            background-color: rgba(30, 30, 50, 0.7);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-custom:hover {
+            border-color: var(--dreampop-blue);
+            box-shadow: 0 0 20px rgba(99, 164, 255, 0.5);
+        }
+        .card-artist:hover, .card-album:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-album .play-button {
+            opacity: 0;
+            transition: all 0.3s ease;
+            transform: translateY(10px);
+        }
+        .card-album:hover .play-button {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .text-logo-accent {
+            color: var(--dreampop-blue);
+            text-shadow: 0 0 10px var(--dreampop-blue);
+        }
+
+        .btn-primary {
+            background-color: var(--dreampop-blue);
+            border-color: var(--dreampop-blue);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #77b1ff;
+            border-color: #77b1ff;
+            box-shadow: 0 0 15px var(--dreampop-blue);
+        }
+
+        .dreampop-text {
+            font-weight: 700;
+            font-style: italic;
+            font-size: 1.5rem;
+            color: var(--dreampop-pink);
+            text-shadow: 0 0 5px var(--dreampop-pink), 0 0 10px var(--dreampop-blue);
+            align-self: center;
+        }
+
+        .border-secondary {
+            border-color: rgba(255, 255, 255, 0.15) !important;
+        }
+
+        header.sticky-top {
+            background-color: #121212 !important; /* Cor sólida para o header */
+        }
